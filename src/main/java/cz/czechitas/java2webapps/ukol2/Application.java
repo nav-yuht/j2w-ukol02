@@ -6,6 +6,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import java.io.IOException;
+import java.util.List;
+
 /**
  * Hlavní třída, která spouští celou aplikaci pomocí Spring Boot.
  */
@@ -17,4 +20,5 @@ public class Application {
         ConfigurableApplicationContext applicationContext = SpringApplication.run(Application.class, args);
         logger.info("Aplikace běží na adrese: http://localhost:{}", applicationContext.getEnvironment().getProperty("local.server.port"));
     }
+
 }
